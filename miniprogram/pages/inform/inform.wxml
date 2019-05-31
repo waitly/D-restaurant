@@ -1,0 +1,22 @@
+<view class="title">
+ <view>
+ <block wx:if="{{!hasUserInfo}}">
+  <view bindtap='getUserInfo'>
+   <image class="img1" src='../../images/13.png'></image>
+   <text class='login'>去登入></text>
+  </view>
+</block>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<view class="back">
+  <view class="list1" bindtap='pocket'><image class="img2" src='../../images/14.png'></image><text>我的钱包</text></view>
+  <view class="list1" bindtap='integral'><image class="img2" src='../../images/16.png'></image><text>我的积分</text></view>
+  <view class="list1" bindtap='recommand'><image class="img2" src='../../images/15.png'></image><text>我的评价</text></view>
+  <view class="list1" ><image class="img2" src='../../images/17.png'></image><text>反馈</text></view>
+
+</view>

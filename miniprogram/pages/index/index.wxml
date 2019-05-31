@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class='view1'>
+  <swiper indicator-dots="true" autoplay="true" class="swp" duration='2000'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view  class='view11'>
+    <view class='view111' bindtap='orderseat'>
+      <image class="img1" src='../../images/8.png'></image>
+      <label class="labellittle">订座位</label>
+    </view>
+    <view class='view112' bindtap='orderparty'>
+      <image class="img1" src='../../images/9.png'></image>
+      <label class="labellittle">订酒宴</label>
+    </view>
+    <view class='view113' bindtap='orderfood'>
+      <image class="img1" src='../../images/7.png'></image>
+      <label class="labellittle">订外卖</label>
+    </view>
+  </view>
+  <view class='view11' bindtap='orderpay'>
+    <view class='view111'>
+      <image class="img1" src='../../images/10.png'></image>
+      <label class="labellittle">买单</label>
+    </view>
+    <view class='view112' bindtap='ordernumber'>
+      <image class="img1" src='../../images/11.png'></image>
+      <label class="labellittle">排号</label>
+    </view>
+    <view class='view113'>
+      <image class="img1" src='../../images/12.png'></image>
+      <label class="labellittle">会员</label>
+    </view>
+  </view>
+</view>

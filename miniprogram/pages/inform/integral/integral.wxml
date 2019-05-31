@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='view1'>
+    <view class='view2'>可用积分</view>
+    <view class='view3'>{{integral}}</view>
+    <view class='view4'>积分商城></view>
+  </view>
+  <view class="record">
+    <view class='record1' bindtap='vision1'>积分记录</view>
+    <view class='record2'  bindtap='vision2'>兑换记录</view>
+  </view>
+  <view wx:for="{{array}}"  wx:for-index="id" class='listall' hidden='{{check1}}'>
+    <view class='list1'>{{array[id].name}}</view>
+    <view class='list2'>{{array[id].time}}</view>
+    <view class='list3'>+{{array[id].count}}</view>
+  </view>
+  <view class="history"  hidden='{{check2}}'>暂无兑换记录！</view>
+</view>

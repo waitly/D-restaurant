@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/inform/inform",
+    "pages/select/select",
+    "pages/inform/pocket/pocket",
+    "pages/inform/integral/integral",
+    "pages/index/number/number",
+    "pages/index/pay/pay",
+    "pages/index/food/food"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "D餐厅",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/2.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "订单",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/inform/inform",
+        "text": "我的",
+        "iconPath": "images/3.png",
+        "selectedIconPath": "images/3.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

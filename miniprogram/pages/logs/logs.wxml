@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<!-- <view class='view'>
+  <view class='view1' bindtap='listall'>全部</view>
+  <view class='view1' bindtap='listpay'>待付款</view>
+  <view class='view1' bindtap='evolute'>待评价</view>
+</view> -->
+<view class='view2'>
+   <view wx:for="{{array}}"  class='view3'>
+    <view>菜单</view>
+   </view>
+</view>

@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class="border">
+    <view class='card'>
+      <view class='name'>D餐厅储值卡</view>
+      <view class="money">￥{{user_money}}</view>
+    </view>
+    <view class="title">充值金额</view>
+      <view class='moneyauto' bindtap='chargemoney1'>100</view>
+      <input type="digit" class='text' placeholder="自定义金额" bindblur='chargemoney2' />
+      <button class="submit"  bindtap='aaa' >充值</button>
+  </view>
+</view>

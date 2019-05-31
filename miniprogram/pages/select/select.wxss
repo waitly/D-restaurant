@@ -1,0 +1,11 @@
+
+.label{
+  float: left;
+  margin-right:20px;
+}
+.picker{
+  float: left;
+}
+.view1{
+  margin: 50px;
+}

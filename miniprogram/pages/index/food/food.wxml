@@ -1,0 +1,37 @@
+
+  <view class="title">
+    <image class="diancai" src='../../../images/18.png'></image>
+  </view>
+  <view class="view1">
+      <view  class="list">
+        <view wx:for="{{array}}"  wx:for-index="id1">
+          <view class='mewuname' bindtap='mewuname'>{{array[id1].name}}</view>
+        </view>
+      </view>
+      <scroll-view scroll-y class='scroll'>
+        <view wx:for="{{array}}"  wx:for-index="id1">
+          <view class='leader'>{{array[id1].name}}</view>
+          <view wx:for="{{array[id1].list}}" wx:for-index="id" class='scroll-view'>
+            
+              <view class='imageview'><image src="{{array[id1].list[id].src}}" class="image" ></image></view>
+              <view class="foodinform">
+              <view class="name">{{array[id1].list[id].message}} </view> 
+              <view class="mount">月销{{array[id1].list[id].mount}} </view> 
+               <view class="price">￥{{array[id1].list[id].price}} </view> 
+              </view>
+             <image src="../../../images/plus.png" class='plus'></image>
+           </view>
+        </view> 
+      </scroll-view> 
+     
+      <view class="submitview">
+        <view class="catfullview">
+          <view class="carview"><image class="car" src="../../../images/food/car.png"/></view>
+          <view class='count'>{{count}}</view>
+          <view class='money'>￥{{money}}</view>
+        </view>
+        <form report-submit="true" class='form' >
+          	<button class="submit" formType="submit" >去结算</button>
+        </form>
+      </view> 
+  </view>

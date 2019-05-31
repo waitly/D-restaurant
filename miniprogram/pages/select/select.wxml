@@ -1,0 +1,16 @@
+<view>
+  <view class='view1'>
+  <label class='label'>日期 :</label>
+ <picker mode="date" bindchange="bindPickerChangeDate" value="{{date}}" start="2018-05-04" end="2018-12-31">
+    <view class="picker">{{date}} </view>
+  </picker>
+  </view>
+   <view class='view1'>
+  <label class='label'>时间 :</label>
+  <picker mode="time" bindchange="bindPickerChangetime" value="{{time}}" start="17:20" end="18:20">
+    <view class="picker">
+     {{time}}
+    </view>
+  </picker>
+  </view>
+</view>
