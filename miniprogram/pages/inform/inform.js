@@ -13,6 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+    
     var that = this;
     wx.login({
       success: function () {
@@ -110,6 +111,12 @@ Page({
   recommand: function () {
     wx.navigateTo({
       url: 'recommand/recommand',
+
+    })
+  },
+  feedback: function () {
+    wx.navigateTo({
+      url: 'feedback/feedback',
 
     })
   }

@@ -1,0 +1,15 @@
+<!--miniprogram/pages/index/member/card/card.wxml-->
+<view class='contain'>
+    <view class='list' bindtap='none'>
+          <view class='imageview' ><image class='image' src="cloud://little-y6v0c.6c69-little-y6v0c/images/member/card/1.png"/></view>
+          优惠券
+    </view>
+    <view class='list' bindtap='none'>
+           <view class='imageview' ><image class='image' src="cloud://little-y6v0c.6c69-little-y6v0c/images/member/card/2.png"/></view>
+          虚拟卡
+    </view>
+    <view class='list' bindtap='none'>
+            <view class='imageview' ><image class='image' src="cloud://little-y6v0c.6c69-little-y6v0c/images/member/card/3.png"/></view>
+          激活码
+    </view>
+</view>

@@ -1,0 +1,2 @@
+ <view class="history"  hidden='{{check2}}'>提交成功！</view>
+ <button type='primary' bindtap='Getpage'>确定</button>

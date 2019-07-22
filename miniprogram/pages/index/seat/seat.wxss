@@ -5,76 +5,71 @@
 }
 .title{
   width: 100%;
-  height: 30px;
-  
-  background-color: #e6e6e6;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color:#b7dd9d;
 }
 .first{
-  width: 25px;
-  height: 25px;
-  background-color: #ea9518;
-  font-weight: bold;
-  color: white;
   float: left;
-  text-align: center;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+   width:100rpx;
+  height: 50rpx;
+  margin-top: 5rpx;
+ 
 }
 .order{
   width: 100%;
-  height: 50px;
-  line-height: 50px;
+  height: 100rpx;
+  line-height: 100rpx;
   border: 1px solid  #e6e6e6;
   /* background-color: rebeccapurple; */
 }
 .imageorderview{
-  width: 30px;
-  height: 30px;
-  margin-left: 15px;
-  margin-top: 5px;
-  margin-right: 10px;
+  width:100rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+ 
   float: left;
 }
 .imageorder{
-  width: 30px;
-  height: 30px;
+   width:90rpx;
+  height: 50rpx;
 }
 .ordername{
   /* background-color: red; */
   width:100px;
-  line-height: 50px;
+  line-height: 100r0px;
   float: left;
 }
 .orderset{
   float: right;
   font-weight: lighter;
-  margin-right: 10px;
+  margin-right: 20rpx;
 }
 .optionset{
   float: right;
 }
 radio{
-  margin-right: 10px;
+  margin-right:20rpx;
 }
 .input{
   float: right;
   /* font-weight: lighter; */
-  margin-right: 10px;
-  width: 150px;
-  margin-top: 10px;
+  margin-right: 20rpx;
+  width: 300rpx;
+  margin-top: 20rpx;
   text-align: center;
 }
 .submit{
-  background-color:#eeb173;
-  border-radius: 20px;
+  background-color:#aad08f;
+  border-radius: 40rpx;
   width: 100%;
   position: fixed;
-  bottom: 30px;
+  bottom: 10rpx;
   
 }
 .orderother{
   width: 100%;
-  height: 200px;
+  height: 400rpx;
   /* border: 1px solid  #e6e6e6; */
 }

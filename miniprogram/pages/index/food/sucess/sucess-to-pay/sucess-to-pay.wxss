@@ -1,0 +1,4 @@
+/* miniprogram/pages/index/food/sucess/sucess-to-pay/sucess-to-pay.wxss */
+page{
+  background-color: white;
+}

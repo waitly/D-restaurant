@@ -1,0 +1,25 @@
+<view class='container'>
+    <view class="order">
+        <view class='name'>姓名:</view>
+        <input class='input' type='text'placeholder="请填写姓名" />
+    </view>
+     <view class="order">
+        <view class='name'>性别:</view>
+        <input class='input' type='text'placeholder="请填写性别" />
+    </view>
+    <view class="order">
+        <view class='name'>邮箱:</view>
+        <input class='input' type='text'placeholder="请填写邮箱" />
+    </view>
+    <view class="order">
+        <view class='name'>手机号码:</view>
+        <input class='input' type='text'placeholder="请填写手机号码" />
+    </view>
+    <view class="order">
+        <view class='name'>地址:</view>
+    </view>
+    <textarea  class="input2"   placeholder="请输入详细地址,不少于5字。" 
+      rows="1"  ref="address"></textarea>
+
+    <button class="submit"  bindtap='aaa' >提交</button>
+</view>

@@ -1,0 +1,52 @@
+<view class="container">
+  <view class='location'>
+    <view class='image'><image class='img' src='cloud://little-y6v0c.6c69-little-y6v0c/images/food/sucess/1.png'></image></view>
+    <view class='seat'>东华理工418号清山湖校区东华理工418号清山湖校区</view>
+    <view class='right' bindtap='chooseLocation'>></view>
+  </view>
+  <view class='time'>
+    <view class="timetext">指定时间</view>
+   <picker  value="{{index}}"  bindchange="bindTimeChange" range="{{time}}" >
+        <view class='orderset'>
+          {{time[index]}}
+        </view>
+      </picker>
+  </view>
+  <!-- <scroll-view class="goods-container" scroll-y="true" scroll-into-view="{{classifyViewed}}" bindscroll="onGoodsScroll">
+			<view wx:for="{{cart}}" wx:for-item="cart" class="list">
+				  <view  wx:for="{{cart.food.foodname}}" wx:for-item="id" class="list"> 
+          <image class="pic1" src="{{goods[index].pic}}"></image>
+					<view>{{id}}X{{cart.food.list[index]}}</view> 
+          </view>
+			</view>
+	</scroll-view> -->
+  <!-- <view wx:for="{{cart}}" wx:for-item="cart"> -->
+	<view class="list"  wx:for="{{cart.foodname}}" wx:for-item="id">
+  
+    <view class="name">{{id}}</view>
+    <view class="count">x{{cart.list[index]}}</view>
+    <view class="price">{{cart.price[index]}}元</view>
+  
+  </view>
+ 
+  <view class="bottomlist">
+    <view class="money">
+      <view class="all">总金额</view>
+      <view class="allprice"><text>￥{{all}}</text></view>
+    </view> 
+     <view class="money">
+      <view class="all">优惠券</view><text class="none">（无可用优惠券）</text>
+      <view class="allprice"><text>-￥{{cut}}</text>></view>
+    </view>
+    <view class="money">
+      
+      <view class="allprice">实付款：<text>￥{{all}}</text></view>
+    </view>
+     <view class="money">
+      
+      <form bindsubmit="addsubmit">
+			<button class="button" formType='submit'>提交订单</button><view class="allprice">合计:<text>￥{{all}}</text></view>
+		</form>
+    </view>
+  </view>
+</view>

@@ -1,4 +1,16 @@
 <!--index.wxml-->
+	<view class="header {{scrollDown?'scrolled':''}}">
+		<view class="location ellipsis" bindtap="toNearby">
+			<image class="icon" src="cloud://little-y6v0c.6c69-little-y6v0c/images/icon_location.png"/>
+			{{address}}....
+		</view>
+		<view class="search" bindtap="tapSearch">
+			<image class="icon" src="cloud://little-y6v0c.6c69-little-y6v0c/images/icon_search.png"/>
+			<i class="fa fa-home"></i>
+			烤鸭
+		</view>
+	</view>
+
 <view class='view1'>
   <swiper indicator-dots="true" autoplay="true" class="swp" duration='2000'>
     <block wx:for="{{imgUrls}}">
@@ -7,32 +19,36 @@
       </swiper-item>
     </block>
   </swiper>
+  <view class="container">
   <view  class='view11'>
-    <view class='view111' bindtap='orderseat'>
-      <image class="img1" src='../../images/8.png'></image>
-      <label class="labellittle">订座位</label>
+    <view class='view113' bindtap=''>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/10.png'></image>
+      <label class="labellittle">点餐</label>
     </view>
-    <view class='view112' bindtap='orderparty'>
-      <image class="img1" src='../../images/9.png'></image>
-      <label class="labellittle">订酒宴</label>
-    </view>
-    <view class='view113' bindtap='orderfood'>
-      <image class="img1" src='../../images/7.png'></image>
-      <label class="labellittle">订外卖</label>
-    </view>
-  </view>
-  <view class='view11' bindtap='orderpay'>
-    <view class='view111'>
-      <image class="img1" src='../../images/10.png'></image>
-      <label class="labellittle">买单</label>
-    </view>
-    <view class='view112' bindtap='ordernumber'>
-      <image class="img1" src='../../images/11.png'></image>
+    <view class='view111' bindtap='ordernumber'>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/11.png'></image>
       <label class="labellittle">排号</label>
     </view>
-    <view class='view113'>
-      <image class="img1" src='../../images/12.png'></image>
+    <view class='view112' bindtap='ordermember'>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/12.png'></image>
       <label class="labellittle">会员</label>
     </view>
   </view>
+  <view class='view11' bindtap='orderfood'>
+    <view class='view111'>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/7.png' ></image>
+      <label class="labellittle">订外卖</label>
+    </view>
+    <view class='view112' bindtap='orderseat'>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/8.png'></image>
+      <label class="labellittle">订座位</label>
+    </view>
+    <view class='view113' bindtap='orderparty'>
+      <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/9.png'></image>
+      <label class="labellittle">订酒宴</label>
+    </view>
+    
+  </view>
 </view>
+</view>
+<view><image src='cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/a' class='daozi'></image></view>

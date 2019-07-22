@@ -1,68 +1,70 @@
+<form report-submit='true' bindsubmit="submitinfo">
 <view class='container'>
   <view class='title'>
-    <view class="first">1</view><view>预定信息</view>
+     <view class="first"><image src="cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/seat/预定.png" class="imageorder"/></view><view>预定信息</view>
   </view>
   <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/1.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/seat/1.png" class="imageorder"/></view>
       <view class='ordername'>人数:</view>
       <!-- <view class='orderset'>{{hunman}}</view> -->
-      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" >
+      <picker name="people" bindchange="bindPickerChange" value="{{index1}}" range="{{array}}" >
         <view class="picker" class='orderset'>
-          {{array[index]}}
+          {{array[index1]}}
         </view>
       </picker>
   </view>
   <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/2.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/2.png" class="imageorder"/></view>
       <view class='ordername'>日期:</view>
-      <picker mode="date" value="{{date}}" start="2019-05-19" end="2019-10-19" bindchange="bindDateChange">
+      <picker name="date"value="{{index2}}" range="{{date}}"  bindchange="bindDateChange">
         <view class="picker"  class='orderset'>
-        {{date}}
+        {{date[index2]}}
         </view>
          </picker>
    </view>
   <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/3.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/3.png" class="imageorder"/></view>
       <view class='ordername'>时间:</view>
-       <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+       <picker name="time"mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
         <view class="picker"  class='orderset'>
           {{time}}
         </view>
       </picker>
   </view>
   <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/4.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/4.png" class="imageorder"/></view>
       <view class='ordername'>位置:</view>
      <view class='optionset'>
-        <radio-group>
+        <radio-group name="window">
           <radio value='靠窗' checked>靠窗</radio><radio class='radio' value='不靠窗'>不靠窗</radio>
         </radio-group>
       
       </view>
   </view>
   <view class='title'>
-    <view class="first">2</view><view>顾客信息</view>
+     <view class="first"><image src="cloud://little-y6v0c.6c69-little-y6v0c-1259261506/images/seat/信息.png" class="imageorder"/></view><view>顾客信息</view>
   </view>
    <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/5.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/5.png" class="imageorder"/></view>
       <view class='ordername'>尊称:</view>
       <view class='optionset'>
-        <radio-group>
+        <radio-group name="sex">
           <radio value='女士' checked>女士</radio><radio class='radio' value='先生'>先生</radio>
         </radio-group></view>
   </view>
   <view class="order">
-      <view  class="imageorderview"><image src="../../../images/seat/6.png" class="imageorder"/></view>
+       <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/6.png" class="imageorder"/></view>
       <view class='ordername'>联系方式:</view>
-       <input type="number" class='text' placeholder="请输入号码" class="input"/>
+       <input name="num" type="number" class='text' placeholder="请输入号码" class="input"/>
   </view>
   <view class='title'>
-    <view class="first">2</view><view>其他信息</view>
+     <view class="first"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/其他.png" class="imageorder"/></view><view>其他信息</view>
   </view>
   <view class="orderother">
-      <view  class="imageorderview"><image src="../../../images/seat/7.png" class="imageorder"/></view>
+      <view  class="imageorderview"><image src="cloud://little-y6v0c.6c69-little-y6v0c/images/seat/7.png" class="imageorder"/></view>
       <view class='ordername'>备注:</view>
-     <input type="text" class='text' placeholder="备注信息" class="input"/>
+     <input name="text" type="text" class='text' placeholder="备注信息" class="input"/>
   </view>
-  <button class="submit"  bindtap='aaa' >提交</button>
+  <button form-type="submit" class="submit" >提交</button>
 </view>
+</form>

@@ -1,0 +1,58 @@
+<view class='container'>
+    <view class="title">
+        <view>
+            <block wx:if="{{!hasUserInfo}}">
+                <view bindtap='getUserInfo'>
+                    <view class='img1view'>
+                        <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/头像.png'>
+                        </image>
+                    </view>
+                </view>
+                <view class='memberview'>
+                    <image class="imgmember" src="cloud://little-y6v0c.6c69-little-y6v0c/images/member/会员.png" >
+                    </image>
+               </view>
+                <text class='login'>非会员</text>
+             </block>
+             <block wx:else>
+                 <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover">
+                 </image>
+                  <view class='memberview'>
+                    <image class="imgmember" src="cloud://little-y6v0c.6c69-little-y6v0c/images/member/会员.png" >
+                    </image>
+               </view>
+                <text class='login'>会员</text>
+               </block>
+               </view>
+     </view>
+     <view class="back">
+        <view class="list1" bindtap='information'>
+            <view class='img2view'>
+                <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/member/1.png'>
+                </image>
+            </view>
+            <text>我的资料</text>
+        </view>
+        <view class="list1" bindtap='card'>
+            <view class='img2view'> 
+                <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/member/2.png'>
+                </image>
+            </view>
+          <text>我的卡包</text>
+          </view>
+        <view class="list1" bindtap='assignment'>
+            <view class='img2view'>
+                <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/member/3.png'>
+                </image>
+            </view>
+            <text>我的任务</text>
+        </view>
+        <view class="list1" bindtap='ask' >
+            <view class='img2view'>
+                <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/member/4.png'>
+                </image>
+            </view>
+            <text>联系客服</text>
+        </view>
+     </view>
+</view>

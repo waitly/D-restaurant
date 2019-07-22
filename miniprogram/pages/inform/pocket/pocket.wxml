@@ -5,8 +5,10 @@
       <view class="money">￥{{user_money}}</view>
     </view>
     <view class="title">充值金额</view>
+    <form bindsubmit="aaa"report-submit='true'>
       <view class='moneyauto' bindtap='chargemoney1'>100</view>
       <input type="digit" class='text' placeholder="自定义金额" bindblur='chargemoney2' />
-      <button class="submit"  bindtap='aaa' >充值</button>
+      <button class="submit"  form-type='submit'>充值</button>
+    </form>
   </view>
 </view>

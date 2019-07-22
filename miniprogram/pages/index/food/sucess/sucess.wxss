@@ -1,0 +1,126 @@
+/* miniprogram/pages/index/food/sucess/sucess.wxss */
+page{
+  background-color: white;
+ 
+}
+text{
+  color: red;
+  /* font-weight: lighter; */
+}
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  background-color:white;
+}
+.location{
+  border-bottom: 1rpx dotted #e4584b; 
+  height: 150rpx;
+  width: 100%;
+ background-color: white;
+  
+}
+.image{
+  width: 80rpx;
+  height: 80rpx;
+   margin-left: 10rpx;
+  margin-top: 30rpx;
+  float: left;
+}
+.img{
+  width: 80rpx;
+  height: 80rpx;
+}
+.seat{
+  margin-top: 50rpx;
+  float: left;
+  /* background-color: cadetblue; */
+  width: 80%;
+  height: 80rpx;
+  font-size: 30rpx;
+}
+.right{
+  float: right;
+  margin-top: 40rpx;
+  margin-right: 10rpx;
+}
+.time{
+  background-color: white;
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+ 
+  border-bottom: 1rpx dotted #e4584b; 
+}
+.timetext{
+  float: left;
+  width: 200rpx;
+
+  margin-left: 20rpx;
+  }
+
+.orderset{
+  float: right;
+  font-weight: lighter;
+  margin-right: 20rpx;
+  bottom: 30rpx;
+
+}
+.list{
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+.name{
+  float: left;
+  width: 200rpx;
+  margin-left: 20rpx;
+  margin-right: 140rpx;
+}
+.list .count{
+  float: left;
+}
+.list .price{
+ float: right;
+ margin-right: 20rpx;
+}
+.bottomlist{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border:1rpx dotted #e4584b;
+  background-color: rebeccapurple;
+}
+.money{
+  width: 100%;
+   height: 100rpx;
+   line-height: 100rpx;
+   background-color: white;
+   
+}
+.money .all{
+  float: left;
+  margin-left: 50rpx;
+  height: 100rpx;
+}
+
+.money .allprice{
+  float: right;
+  height: 100rpx;
+  margin-right: 50rpx;
+  
+}
+.money .button{
+  background-color: #e4584b;
+  width: 200rpx;
+  height: 100rpx;
+  float: right;
+  margin-right: 10rpx;
+}
+.goods-container{
+  	-webkit-flex: 1;
+	background: #ffffff;
+	height: 500rpx;
+  width: 100%;
+}

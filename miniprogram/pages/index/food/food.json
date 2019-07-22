@@ -1,4 +1,7 @@
 {
-  "navigationStyle":"custom",
+  
+  "navigationBarTitleText": "订外卖",
+ "navigationBarBackgroundColor": "#e4584b",
   "usingComponents": {}
+ 
 }

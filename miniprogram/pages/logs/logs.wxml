@@ -1,11 +1,22 @@
 <!--logs.wxml-->
-<!-- <view class='view'>
-  <view class='view1' bindtap='listall'>全部</view>
-  <view class='view1' bindtap='listpay'>待付款</view>
-  <view class='view1' bindtap='evolute'>待评价</view>
-</view> -->
-<view class='view2'>
-   <view wx:for="{{array}}"  class='view3'>
-    <view>菜单</view>
-   </view>
-</view>
+<view class="container">
+  <view class="title">
+          <view class="order">待付款</view>
+           <view class="order">待收货</view>
+            <view class="order">待评价</view>
+    </view>
+
+	<scroll-view class="goods-container" scroll-y="true" scroll-into-view="{{classifyViewed}}" bindscroll="onGoodsScroll">
+			<view wx:for="{{count}}" wx:for-item="count" class="list"> <!-- wx:key="id" id="{{}}" -->
+        <view class="number">订单编号：{{count.code}}</view>
+          <view class="line"></view>
+          <view class="menu">
+            <view class="goods1" wx:for="{{count.food.foodname}}" wx:for-item="id"> 
+              <view >{{id}}</view>
+            </view>
+            <view class="price">￥{{count.food.total}}</view>
+          </view>
+          <button class="button">去付款</button>
+			</view>
+		</scroll-view>
+    </view>

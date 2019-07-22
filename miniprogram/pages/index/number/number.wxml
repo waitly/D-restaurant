@@ -1,53 +1,70 @@
 <view class='container'>
   
   <view class="title">
-    <image class="img1" src='../../../images/number/1.png'></image>
+    <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c/images/number/1.png'></image>
     <view class="text1">当前信息</view>
-    <view class="text2">等待时间仅供参考</view>
+    <view class="text2">请以下排号的客人准备用餐</view>
   </view>
   <view class='table'>
     <view class='t1'>
       <view class='b1'>
-        <view >小桌</view>
-        <view class='human'>1-4人</view>
+       
+          <view class='size'>小桌</view> 
+          <view class='human'>1-4人</view>
+      
       </view>
       <view class='b2'>
-        <view>前方<text class='zhuo'>{{little}}</text>桌</view>
+        <view class='zhuo'><text style='color:#b74131;'>{{little}}</text>桌排队</view>
       </view>
       <view class='b3'>
-        <view class='minute'>约{{littleminute}}分钟</view>
+        <view class='minute'>{{littlenum}}号</view>
       </view>
     </view>
     <view class='t1'>
       <view class='b1'>
-        <view >中桌</view>
-        <view class='human'>5-8人</view>
+        
+          <view class='size'>中桌</view>
+          <view class='human'>5-8人</view>
+        
       </view>
       <view class='b2'>
-        <view>前方<text class='zhuo'>{{middle}}</text>桌</view>
+        <view class='zhuo'><text style='color:#b74131;'>{{middle}}</text>桌排队</view>
       </view>
       <view class='b3'>
-        <view class='minute'>约{{middleminute}}分钟</view>
+        <view class='minute'>{{middlenum}}号</view>
       </view>
     </view>
     <view class='t1'>
       <view class='b1'>
-        <view>大桌</view>
+        
+        <view class='size'>大桌</view>
         <view class='human'>大于8人</view>
       </view>
       <view class='b2'>
-        <view>前方<text class='zhuo'>{{huge}}</text>桌</view>
+        <view class='zhuo'><text style='color:#b74131;'>{{huge}}</text>桌排队</view>
       </view>
       <view class='b3'>
-        <view class='minute'>约{{hugeminute}}分钟</view>
+        <view class='minute'>{{hugenum}}号</view>
       </view>
     </view>
   </view>
    <view class="title">
-    <image class="img1" src='../../../images/number/2.png'></image>
+    <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/number/5.png'></image>
     <view>排队取号</view>
   </view>
-   <button class='button1'>取小桌</button>
-    <button class='button1'>取中桌</button>
-     <button class='button1'>取大桌</button>
-</view>
+  <view class='form'>
+    <form bindsubmit="Small" report-submit="true">
+			<button class="button1" formType='submit' size='default' >取小桌</button>
+		</form>
+    <form bindsubmit="Medium" report-submit="true">
+			<button class="button1" formType='submit'>取中桌</button>
+		</form>
+    <form bindsubmit="Large" report-submit="true">
+			<button class="button1" formType='submit'>取大桌</button>
+		</form>
+    </view>
+  </view>
+   <!-- <button class='button1' bindtap='Small'>取小桌</button>
+    <button class='button1' bindtap='Medium'>取中桌</button>
+     <button class='button1' bindtap='Large'>取大桌</button>
+     </view> -->

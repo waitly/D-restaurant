@@ -1,0 +1,96 @@
+.container{
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+.title{
+  background-color: #f7f1e3;
+  /* background-color: rebeccapurple; */
+  width:100%;
+  height:140rpx;
+  padding-top: 40rpx;
+  padding-left:40rpx;
+  font-size: 40rpx;
+  float: left;
+  }
+  .img1view{
+     width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 5rpx solid #f6de97;
+   margin-right: 20rpx;
+  /* background-color: red; */
+  float: left;
+  }
+  .img1{
+  width: 100rpx;
+  height: 100rpx;
+
+}
+.memberview{
+     width: 50rpx;
+  height: 50rpx;
+  /* background-color: rebeccapurple; */
+   float: left;
+  margin-top: 40rpx;
+  
+  }
+  .imgmember{
+   width: 50rpx;
+  height: 50rpx;
+ 
+}
+.login{
+  font-size: 40rpx;
+  position: absolute;
+  left: 200rpx;
+  top: 80rpx;
+  float: left;
+
+}
+.back{
+   background-color: #f6f7f7;
+  width: 100%;
+  height: 1100rpx;
+  padding-top: 5rpx;
+}
+.list1{
+   width: 100%;
+  height: 100rpx;
+  background-color: #ffffff;
+  line-height:100rpx; 
+  padding-left: 30rpx;
+   margin-bottom: 10rpx;
+  font-size: 36rpx;
+  float: left;
+}
+.img2view{
+  width: 50rpx;
+  height: 50rpx;
+   margin-top: 15rpx;
+    margin-right: 25rpx;
+  clear: both;
+  float: left;
+}
+.img2{
+  width: 50rpx;
+  height: 50rpx;
+/* background-color: rebeccapurple; */
+ 
+ 
+  /* margin: auto; */
+   
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  top: 160rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+  left: 180rpx;
+  position: absolute;
+  top: 80rpx;
+}

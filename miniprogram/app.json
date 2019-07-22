@@ -2,19 +2,32 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/inform/inform",
     "pages/select/select",
+    "pages/inform/inform",
     "pages/inform/pocket/pocket",
     "pages/inform/integral/integral",
+    "pages/inform/recommand/recommand",
+    "pages/inform/feedback/feedback",
     "pages/index/number/number",
+    "pages/index/seat/seat",
     "pages/index/pay/pay",
-    "pages/index/food/food"
+    "pages/index/party/party",
+    "pages/index/food/food",
+    "pages/index/food/sucess/sucess",
+    "pages/index/search",
+    "pages/index/member/member",
+    "pages/index/member/ask/ask",
+    "pages/index/member/assignment/assignment",
+    "pages/index/member/card/card",
+    "pages/index/member/information/information",
+    "pages/index/food/sucess/sucess-to-pay/sucess-to-pay"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "D餐厅",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff"
   },
   "tabBar": {
     "list": [

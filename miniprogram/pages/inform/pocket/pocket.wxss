@@ -1,12 +1,14 @@
-
+page{
+  background-color: white;
+}
 .container {
 	height: 100%;
   width: 100%;
   padding: 0px;
 }
 .border{
-  width: 80%;
-  height: 600px;
+  width: 95%;
+  height: 700px;
   /* background-color: red; */
 }
 .card{
@@ -24,7 +26,7 @@
 }
 .money{
   float: right;
-  margin-top: 50%;
+  margin-top: 40%;
   margin-right: 10px;
   font-size: 25px;
 }
@@ -59,8 +61,8 @@
 .submit{
   background-color:#eeb173;
   border-radius: 20px;
-  width: 80%;
+  width: 95%;
   position: fixed;
-  bottom: 30px;
+  bottom: 5px;
   
 }

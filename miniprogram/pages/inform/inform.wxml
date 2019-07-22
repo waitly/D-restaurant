@@ -2,7 +2,7 @@
  <view>
  <block wx:if="{{!hasUserInfo}}">
   <view bindtap='getUserInfo'>
-   <image class="img1" src='../../images/13.png'></image>
+   <image class="img1" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/头像.png'></image>
    <text class='login'>去登入></text>
   </view>
 </block>
@@ -14,9 +14,32 @@
 </view>
 
 <view class="back">
-  <view class="list1" bindtap='pocket'><image class="img2" src='../../images/14.png'></image><text>我的钱包</text></view>
-  <view class="list1" bindtap='integral'><image class="img2" src='../../images/16.png'></image><text>我的积分</text></view>
-  <view class="list1" bindtap='recommand'><image class="img2" src='../../images/15.png'></image><text>我的评价</text></view>
-  <view class="list1" ><image class="img2" src='../../images/17.png'></image><text>反馈</text></view>
-
+    <view class="list1" bindtap='pocket'>
+        <view class='img2view'>
+            <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/2.png'>
+            </image>
+        </view>
+        <text>我的钱包</text>
+    </view>
+    <view class="list1" bindtap='integral'>
+        <view class='img2view'> 
+            <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/4.png'>
+            </image>
+        </view>
+      <text>我的积分</text>
+      </view>
+    <view class="list1" bindtap='recommand'>
+        <view class='img2view'>
+            <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/3.png'>
+            </image>
+        </view>
+        <text>我的评价</text>
+    </view>
+     <view class="list1"  bindtap='feedback' >
+        <view class='img2view'>
+            <image class="img2" src='cloud://little-y6v0c.6c69-little-y6v0c/images/inform/5.png'>
+            </image>
+        </view>
+        <text>反馈</text>
+      </view>
 </view>
