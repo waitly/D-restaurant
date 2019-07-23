@@ -41,6 +41,8 @@ App({
         }
       }
     })
+
+    
     this.globalData = {}
     wx.cloud.callFunction({
       name: 'login',
